@@ -149,9 +149,11 @@ int main(int argc, char* argv[])
 				if (strcmp(subline[i]->getName(), aaa) == 0)
 				{
 					subline[i]->printsta();
+					break;
 				}
 			}
-			cout << "NO SUCH LINE!" << endl;
+			if(i==linenum)
+				cout << "NO SUCH LINE!" << endl;
 		}
 		cin >> linenum;
 		return 0;
